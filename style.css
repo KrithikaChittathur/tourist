@@ -1,0 +1,428 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family:sans-serif;
+    background-color:honeydew;
+   background-size:cover;
+   background-repeat: no-repeat;
+   }
+   
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   
+   
+   /* NAVBAR STYLING STARTS */
+   .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+   background-color:honeydew;
+   background-size:cover;
+   color:#FDF5DF;
+   }
+   
+   .nav-links a {
+    color:#080708;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+   color:#080708;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   
+   }
+   .menu li:hover {
+    background-color:white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+   background-image:url("pa.jfif");
+   background-size:cover;
+    padding: 1em 0;
+    position:absolute;/*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   color:#5EBEC4;
+   
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color:lightgrey;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+   
+   
+   
+   
+   
+   
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+   /* CHECKBOX HACK */
+   input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-image:url("pa.jfif");
+   background-size:100%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   color:#F92C85;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:white;
+    transition: 0.3s ease;
+   color:#F92C85;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color:grey;
+   color:darkblue;
+   }
+   
+   .box{
+   flex-direction:column;
+   width:100%;
+   
+   }
+   .box1{
+   flex-direction:column;
+   width:100%;
+   
+   }
+   
+   .box-form1{
+     width:60%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+    transition:0.5s;
+   height:60%;
+   margin-left:7%;
+   margin-top:5%;
+   }
+   h2{
+   font-size:100px;
+   color:#F92C85;
+   }
+   .box-form2{
+     width:100%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+   transition:0.5s;
+   margin-left:5%;
+   margin-top:5%;
+   height:50%;
+   }
+   .box-form img{
+   width:100%;
+   height:50%;
+   }
+   h1{
+   font-size:10px;
+   color:#F92C85;
+   }
+   .box-form{
+    width:50%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+   height:50%;
+   transition:0.5s;
+   margin-left:0%;
+   margin-right:50%;
+   }
+   
+   .box-form5{
+     width:10%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+   
+   margin-left:0%;
+   margin-right:0px;
+   height:50%;
+   margin-top:5%;
+   }
+   .box-form4{
+      width:60%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+   margin-left:5%;
+   margin-right:0px;
+   height:40%;
+   margin-top:5%;
+   
+   }
+   h1{
+   font-size:25px;
+   font-family:georgia;
+   color:darkslategrey;
+   margin-left:0px;
+   transition-duration:3s;
+   }
+   .kavya{
+   flex-direction:column-reverse;
+   
+   }
+   .nandu{
+   margin-right:250px;
+   width:70%;
+   height:50%;
+   }
+   
+   
+   }
+   
+   
+   h1{
+   font-size:40px;
+   font-family:georgia;
+   color:darkslategray;
+   margin-left:0px;
+   transition-duration:3s;
+   text-align:center;
+   }
+   p{
+   font-size:40px;
+   text-align:left;
+   color:black;
+   padding:10px;
+   }
+   .f{
+   background:#051622;
+   }
+   .f1{
+   font-size:15px;
+   color:linen;
+   }
+   .f2{
+   font-size:15px;
+   color:linen;
+   text-align:right;
+   }
+   img{
+   animation-duration:5s;
+   width:150px;
+   height:auto;
+   }
+   button{
+   padding:20px;
+   color:black;
+   background:transparent;
+   border:1px solid black;
+   border-radius:20px;
+   }
+   .box-form{
+   float:left;
+     width:60%;
+    background:white;
+     border-radius: 10px;
+     overflow: hidden;
+   height:50%;
+   transition:0.5s;
+   margin-left:10%;
+   }
+   .box-form:hover{
+    box-shadow: 0 0 20px 6px #090b6f85;
+   }
+   .box-form img{
+   width:100%;
+   height:50%;
+   }
+   .box-form1 img{
+   width:100%;
+   height:50%;
+   }
+   .box-form1{
+      width:60%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+    transition:0.5s;
+   height:50%;
+   margin-left:10%;
+   }
+   .box-form1:hover{
+   box-shadow: 0 0 20px 6px #090b6f85;
+   }
+   
+   h2{
+   font-size:40px;
+   color:#F92C85;
+   
+   }
+   .box-form2{
+      width:60%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+   tansition:0.5s;
+   margin-right:10px;
+   height:50%;
+   margin-left:10%;
+   }
+   .box-form2:hover{
+   box-shadow: 0 0 20px 6px #090b6f85;
+   }
+   .box-form2 img{
+   width:100%;
+   height:50%;
+   }
+   .box-form3{
+      width:60%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+   margin-left:10%;
+   margin-right:30px;
+   height:50%;
+   margin-top:5%;
+   
+   }
+   .box-form3 img{
+   width:100%;
+   height:50%;
+   }
+   .box-form4{
+      width:60%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+   
+   margin-left:10%;
+   margin-right:0px;
+   height:40%;
+   margin-top:5%;
+   
+   }
+   .box-form4 img{
+   width:100%;
+   height:50%;
+   }
+   .box-form5{
+     width:60%;
+   background:white;
+    border-radius:10px;
+    overflow: hidden;
+    
+   margin-left:10%;
+   margin-right:0px;
+   height:50%;
+   margin-top:5%;
+   
+   }
+   button:hover
+   {
+     background:lavender;
+   border:1px solid purple;
+   transition:1s;
+   cursor:pointer;
+   }
+   .box-form5 img{
+   width:100%;
+   height:50%;
+   }
+   .box{
+   display:flex;
+   justify-content: space-between;
+   
+   }
+   
+   .box1{
+   display:flex;
+   justify-content: space-between;
+   
+   }
+   .box-form3:hover{
+   box-shadow: 0 0 20px 6px #090b6f85;
+   }
+   .box-form4:hover{
+   box-shadow: 0 0 20px 6px #090b6f85;
+   }
+   .box-form5:hover{
+   box-shadow: 0 0 20px 6px #090b6f85;
+   }
+   
+   .kavya{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   }
+   .nandu{
+   margin-left:250px;
+   width:50%;
+   height:50%;
+   }
+   .h p{
+   padding-left:70px;
+   font-family:sans-serif;
+   font-size:35px;
+   }
+   .h h1{
+   margin-top:5px;
+   margin-left:5px;
+   
+   }
+   

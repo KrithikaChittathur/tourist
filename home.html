@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>home</title>
+<style>
+/* UTILITIES */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family:monospace;
+background-image:url("pa.jfif");
+background-size:cover;
+background-repeat: no-repeat;
+}
+
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+background-image:url("pa.jfif");
+background-size:cover;
+color:#FDF5DF;
+
+}
+.nav-links a {
+ color:#F92C85;
+font-family:fantasy;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+color:#5EBEC4;
+font-family:fantasy;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+
+}
+.menu li:hover {
+ background-color:white;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+.dropdown {
+background-image:url("pa.jfif");
+background-size:cover;
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+color:#5EBEC4;
+
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color:lightgrey;
+}
+.services:hover .dropdown {
+ display: block;
+}
+
+
+
+
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-image:url("pa.jfif");
+background-size:cover;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+color:#F92C85;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:white;
+ transition: 0.3s ease;
+color:#F92C85;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color:grey;
+color:darkblue;
+}
+
+.box-form {
+    flex-flow: wrap;
+    align-items: center;
+  }
+
+
+
+}
+img{
+border:3px solid black;
+}
+.one{
+  width:900px;
+  height:500px;
+}
+.oneone{
+  width:900px;
+  height:500px;
+}
+.two{
+  width:900px;
+  height:500px;
+}
+.three{
+  width:900px;
+  height:500px;
+}
+.four{
+  width:900px;
+  height:500px;
+}
+.five{
+  width:900px;
+  height:500px;
+}
+.six{
+  width:900px;
+  height:500px;
+}
+.seven{
+  width:900px;
+  height:500px;
+}
+
+
+#slider {
+  overflow: hidden;
+  width: 900px;
+  height:500px;
+  margin:0%;
+
+}
+ #slider figure
+      {
+        position:relative;
+        width:830%;
+        margin:0px;
+        left:0px;
+        animation: 21s slide infinite;
+        animation-timing-function:linear;
+       }
+       #slider figure img 
+        {
+          float:left;
+         
+        }
+
+@keyframes slide
+      { 
+      0%{left:-0%}
+      6%{left:-0%}
+      12%{left:-100%}
+      18%{left:-100%}
+      24%{left:-200%}
+      30%{left:-200%}
+      36%{left:-300%}
+      42%{left:-300%}
+      48%{left:-300%}
+      54%{left:-400%}
+      60%{left:-400%}
+      66%{left:-400%}
+      72%{left:-500%}
+      78%{left:-500%}
+      84%{left:-500%}
+      90%{left:-600%}
+      96%{left:-600%}
+      100%{left:-600%}
+       }      
+.p{
+font-size:20px;
+font-family:monospace;
+}
+.i{
+float:right;
+color:#1181B2;
+position:fixed;
+margin-left:98%;
+}
+
+
+
+@media (max-width: 768px) {
+.one{
+  width:300px;
+  height:200px;
+}
+.oneone{
+  width:300px;
+  height:200px;
+}
+.two{
+  width:300px;
+  height:200px;
+}
+.three{
+  width:300px;
+  height:200px;
+}
+.four{
+  width:300px;
+  height:200px;
+}
+.five{
+  width:300px;
+  height:200px;
+}
+.six{
+  width:300px;
+  height:200px;
+}
+.seven{
+  width:300px;
+  height:200px;
+}
+#slider {
+  overflow: hidden;
+  width: 300px;
+  height:200px;
+  margin-top:0%;
+  border:4px groove black;
+  border-radius: 2px;
+
+}
+ #slider figure
+      {
+        position:relative;
+        width:825%;
+        margin:0px;
+        left:0px;
+        animation: 21s slide infinite;
+        animation-timing-function:linear;
+       }
+       #slider figure img 
+        {
+          float:left;
+          width:12.0666%;
+        }
+
+@keyframes slide
+       { 
+      0%{left:-0%}
+      6%{left:-0%}
+      12%{left:-100%}
+      18%{left:-100%}
+      24%{left:-200%}
+      30%{left:-200%}
+      36%{left:-300%}
+      42%{left:-300%}
+      48%{left:-300%}
+      54%{left:-400%}
+      60%{left:-400%}
+      66%{left:-400%}
+      72%{left:-500%}
+      78%{left:-500%}
+      84%{left:-500%}
+      90%{left:-600%}
+      96%{left:-600%}
+      100%{left:-600%}
+       }
+
+}
+
+button{
+padding:20px;
+background:#5EBEC4;
+color:linen;
+}
+.box-form{
+margin: 0 auto;
+  width: 80%;
+  background:white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 6px #090b6f85;
+}
+.p{
+padding:30px;
+}
+.f{
+
+display:flex;
+}
+.foo{
+background:#051622;
+color:linen;
+}
+.f1{
+font-size:15px;
+color:linen;
+
+}
+.f2{
+font-size:15px;
+color:linen;
+margin-left:20%;
+}
+.f3{
+color:linen;
+font-size:15px;
+margin-left:10%;
+}
+h1{
+color:#FA255E;
+font-family:fantasy;
+text-align:center;
+font-size:50px;
+}
+button{
+cursor:pointer;
+
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+
+
+<div class="i">
+<i class="fa fa-whatsapp"></i><br><br>
+<i class="fa fa-facebook"></i><br><br>
+<i class="fa fa-envelope"></i><br><br>
+</div>
+
+<br><br>
+<div class="box-form">
+<br><br>
+<center><div id="slider">
+   <figure id="slidy">
+    <img class="oneone"
+   src="t.jpg">
+   <img class="two"
+   src="b.jpg">
+  <img class="three"
+   src="g.jpg">
+   <img class="four"
+   src="ga.jpg">
+  <img class="five"
+   src="c.jpg">
+   <img class="six"
+   src="d.jpg">
+  <img class="seven"
+   src="s.jpg">
+    </figure>
+  </div></center>
+
+
+<p class="p">Tirupati, an ancient town at the southern end of Andhra Pradesh, is a pilgrim’s paradise. The place is famous for its many Hindu shrines; the most revered being Sri Venkateswara Swamy or Tirupati Balaji temple.<br>Devotees from different parts of India and abroad visit this temple town, to seek the blessings of the Almighty. Other than religious centers, there are plenty of other places to visit in Tirupati for nature lovers, adventure seekers and historians. A visit to Tirupati is incomplete till you explore the other side of this divine town: calm, unspoiled and breathtakingly beautiful! </p>
+</div>
+<br><br>
+<footer>
+<div class="foo">
+<br>
+<center><h2 style="color:linen">Temple Town</h2><br><p>All Rights are Reserved</p></center>
+<br>
+<div class="f">
+<div class="f1">
+<p >&#169copyrights</p>
+<p>Terms&condition  |  Privacy policy  |  Cookies consent</p>
+<p>@2018Temple Town</p>
+</div>
+<div class="f3">
+<p >About us</p>
+<p>Promotions</p>
+<p >Partners</p>
+<p>Careers</p>
+</div>
+<div class="f2">
+<p>Contact us</p>
+<p><i class="fa fa-whatsapp"></i>&nbsp<i class="fa fa-envelope"></i>&nbsp<i class="fa fa-twitter"></i>&nbsp<i class="fa fa-facebook"></i>&nbsp<i class="fa fa-instagram"></i></p>
+</div>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
